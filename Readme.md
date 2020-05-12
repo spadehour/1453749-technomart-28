@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Alexandra Ulya](https://up.htmlacademy.ru/htmlcss/28/user/1453749).
-* Наставник: [Елена Ордина].
+* Наставник: [Елена Ордина](https://htmlacademy.ru/profile/id512899).
 
 ---
 
