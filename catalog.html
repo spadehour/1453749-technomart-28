@@ -7,22 +7,22 @@
   <body>
   
 	<header>
-		<a href="index.html"><img alt="Техномарт"></a>
-<!-- Здесь должна быть форма поиска -->		
-		<p>Поиск</p>
-		<a href=""><p>Корзина</p></a>
-		<a href=""><p>Оформить заказ</p></a>
+		<a href="index.html"><img alt="Техномарт" src="no-source-yet"></a>
+		<label for="search">Поиск</label>
+		<input type="search" id="search">		
+		<a href="">Корзина</a>
+		<a href="">Оформить заказ</a>
 		<p>Интернет-магазин<br>
 		строительных материалов<br>
 		и инструментов для ремонта</p>
 		<section>
-			<p>+7 (812) 555-05-55</p>
+			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
 			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 		</section>
 <!-- Одна из следующих двух секций должна быть видима в зависимости от того, выполнен ли вход -->
 		<section>
-			<a href=""><p>Войти</p></a>
-			<a href=""><p>Регистрация</p></a>
+			<a href="">Войти</a>
+			<a href="">Регистрация</a>
 		</section>
 		<section>
 			<p>%username</p>
@@ -58,24 +58,46 @@
 			<h2>Фильтр:</h2>
 			
 			<section>
+				<h3>Цена:</h3>
+				<!-- Здесь должен быть виджет, позволяющий выставить ценовой диапазон -->
+			</section>
+			
+			<section>
 				<h3>Производители:</h3>
-				<ul>
 <!-- Этот список должен быть реализован в виде чекбоксов -->
-					<li>BOSCH</li>
-					<li>Интерскол</li>
-					<li>Makita</li>
-					<li>DeWALT</li>
-					<li>HITACHI</li>
-				</ul>
+					<label>
+						<input type="checkbox" name="manufacturer-bosch">
+						BOSCH
+					</label>
+					<label>
+						<input type="checkbox" name="manufacturer-interskol">
+						Интерскол
+					</label>
+					<label>
+						<input type="checkbox" name="manufacturer-makita">
+						Makita
+					</label>
+					<label>
+						<input type="checkbox" name="manufacturer-dewalt">
+						DeWALT
+					</label>
+					<label>
+						<input type="checkbox" name="manufacturer-hitachi">
+						HITACHI
+					</label>
 			</section>
 			
 			<section>
 				<h3>Питание:</h3>
-				<ul>
 <!-- Этот список должен быть реализован в виде радиокнопок -->
-					<li>Аккумуляторные</li>
-					<li>Сетевые</li>
-				</ul>
+				<label>
+					<input type="radio" name="power" value="0">
+					Аккумуляторные
+				</label>
+				<label>
+					<input type="radio" name="power" value="1">
+					Сетевые
+				</label>
 			</section>
 			
 			<button>Показать</button><!-- Здесь, вероятно, предстоит сделать кнопку отправки формы -->
@@ -85,8 +107,21 @@
 		<section>
 			<h2>Товары</h2><!-- Скрыть! -->
 			
+			<p>Сортировка:<p>
+			<ul>
+<!-- Этот список должен быть реализован в виде радиокнопок -->
+				<li>По цене:</li>
+				<li>По типу:</li>
+				<li>По фунцкионалу:</li>
+			</ul>
+			<ul>
+<!-- Этот список должен быть реализован в виде радиокнопок -->
+				<li>По возрастанию</li>
+				<li>По убыванию</li>
+			</ul>
+			
 			<article>
-				<img alt="BFG 6000">
+				<img alt="BFG 6000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -97,7 +132,7 @@
 				<p>25500 Р.</p>
 			</article>
 			<article>
-				<img alt="BFG 6000">
+				<img alt="BFG 6000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -108,7 +143,7 @@
 				<p>25500 Р.</p>
 			</article>
 			<article>
-				<img alt="BFG 6000">
+				<img alt="BFG 6000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -119,7 +154,7 @@
 				<p>25500 Р.</p>
 			</article>
 			<article>
-				<img alt="BFG 3000">
+				<img alt="BFG 3000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -130,7 +165,7 @@
 				<p>15500 Р.</p>
 			</article>
 			<article>
-				<img alt="BFG 6000">
+				<img alt="BFG 6000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -141,7 +176,7 @@
 				<p>25500 Р.</p>
 			</article>
 			<article>
-				<img alt="BFG 2000">
+				<img alt="BFG 2000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -152,7 +187,7 @@
 				<p>12500 Р.</p>
 			</article>
 			<article>
-				<img alt="BFG 3000">
+				<img alt="BFG 3000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -163,7 +198,7 @@
 				<p>15500 Р.</p>
 			</article>
 			<article>
-				<img alt="BFG 6000">
+				<img alt="BFG 6000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -174,7 +209,7 @@
 				<p>25500 Р.</p>
 			</article>
 			<article>
-				<img alt="BFG 2000">
+				<img alt="BFG 2000" src="no-source-yet">
 				<p>new</p>
 				<div><!-- Этот див должен замещать изображение -->
 					<button type="button">Купить</button>
@@ -185,10 +220,24 @@
 				<p>12500 Р.</p>
 			</article>
 				
+			<ul>
+				<li><a>1</a></li>
+				<li><a>2</a></li>
+				<li><a>Следующая</a></li>
+			</ul>
+		</section>
+			
+		<section>
+			<h3>Пара слов о перфораторах</h3>
+			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br> 
+			В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+		</section>
+				
 	</main>
 	
 	<footer>
-		<img alt="Техномарт">
+		<img alt="Техномарт" src="no-source-yet">
 		<ul>
 			<li><a href="">Компания</a></li>
 			<li><a href="">Новости</a></li>
@@ -197,7 +246,7 @@
 			<li><a href="">Контакты</a></li>
 		</ul>
 		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-		+7 (812) 555-05-55</p>
+		<a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
 		<ul>
 			<li><a href="">Материалы</a></li>
 			<li><a href="">Техника</a></li>
@@ -213,7 +262,7 @@
 		</ul>
 		<p>Обратная связь:<br>
 		<a href="">mail@htmlacademy.ru</a></p>
-		<p>Разработано —<br><a href="">htmlacademy.ru</a></p>
+		<p>Разработано —<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
 	</footer>
 
   </body>
