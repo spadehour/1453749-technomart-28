@@ -50,7 +50,7 @@
   --black: #000000;
   --beige: #FFD180;
 
-  /* color variants */
+  /* color variations */
   --red-darkened: #BA2732;
   --green-lightened: #5FBB2D;
   --green-darkened: #518534;
@@ -311,7 +311,7 @@ ul.no-default-mark {
   color: var(--white);
 }
 
-.departments-item-title {
+.departments-item h3 {
   font-weight: 700;
 }
 
@@ -331,29 +331,35 @@ ul.no-default-mark {
 
 /* sections in departments block */
 
-.departments-item.supplies {
+.departments-item-supplies {
   background-color: var(--yellow-special);
 }
 
-.departments-item.tools {
+.departments-item-tools {
   background-color: var(--blue-special);
 }
 
-.departments-item.equipment {
+.departments-item-equipment {
   background-color: var(--lilac-special);
 }
 
-.departments-item.discount {
+.departments-item-discount {
   background-color: var(--green-special);
 }
 
-.departments-item.delivery {
+.departments-item-delivery {
   background-color: var(--yellow-alt-special);
 }
 
 /* slider in departments block */
 
-.departments-slider-title {
+.departments-slider {
+  background-color: var(--grey);
+  /*background-image*/
+  /*inner-shadow top*/
+}
+
+.departments-slider h3 {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
