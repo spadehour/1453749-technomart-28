@@ -160,6 +160,10 @@ ul.no-default-mark {
   background-color: var(--darkgrey);
 }
 
+.top-panel a {
+  color: inherit;
+}
+
 .logo-background {
   background-color: var(--red);
 }
