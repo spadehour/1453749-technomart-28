@@ -196,9 +196,21 @@ ul.no-default-mark {
   background-color: var(--red-darkened);
 }
 
+.top-panel-search {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+
 .top-panel-search:focus {
   color: var(--black);
   background-color: var(--white);
+}
+
+.top-panel-search::placeholder {
+  color: inherit;
+  opacity: 1; /* for firefox */
 }
 
 .top-panel-order {
@@ -207,6 +219,10 @@ ul.no-default-mark {
 
 .top-panel-order:hover{
   background-color: var(--green-lightened);
+}
+
+.top-panel-order:active {
+  background-color: var(--green);
 }
 
 /* header content */
