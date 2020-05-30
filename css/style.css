@@ -106,25 +106,38 @@ ul.no-default-mark {
   font:inherit;
   text-decoration: none;
   text-align: center;
+  background-color: transparent;
   border: none;
+  border-radius: 0;
 }
 
 .separate-button {
-  text-transform: uppercase;
-  line-height: 18px;
-  border: 1px solid var(--border-lightgrey);
-}
-
-.index .separate-button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--red);
 }
 
-.index .separate-button:active {
+.separate-button:active {
   background-color: var(--red-darkened);
+}
+
+.inner-page .separate-button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid var(--border-lightgrey);
+}
+
+.inner-page .separate-button:hover {
+  border-color: var(--lightgrey);
+}
+
+.inner-page .separate-button:active {
+  background-color: transparent;
+  border-color: var(--red);
 }
 
 .labeled::before {
@@ -478,11 +491,7 @@ ul.no-default-mark {
 
 /* catalog item buttons */
 
-.catalog-item .button {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+.catalog-item .separate-button {
   border-radius: 2px;
 }
 
@@ -510,6 +519,7 @@ ul.no-default-mark {
 }
 
 .button-bookmarks:active {
+  background-color: transparent;
   opacity: 0.5;
 }
 
