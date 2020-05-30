@@ -115,14 +115,12 @@ ul.no-default-mark {
   border: 1px solid var(--border-lightgrey);
 }
 
-.index .separate-button, .catalog-item .separate-button {
+.index .separate-button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
   color: var(--white);
   background-color: var(--red);
-  border: none;
 }
 
 .index .separate-button:active {
@@ -133,7 +131,6 @@ ul.no-default-mark {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   color: var(--white);
@@ -371,13 +368,16 @@ ul.no-default-mark {
 
 /* sections headlines */
 
-.section-headline {
+.section-headline-block {
+  background-color: var(--background-warm);
+}
+
+.section-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--grey);
-  background-color: var(--background-warm);
 }
 
 .inner-page .section-headline-block {
@@ -451,10 +451,10 @@ ul.no-default-mark {
 }
 
 .catalog-item:hover {
-  /* outer shadow */
+  /* add outer shadow, display .catalog-item-menu */
 }
 
-.catalog-item-description {
+.catalog-item h3 {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -478,11 +478,16 @@ ul.no-default-mark {
 
 /* catalog item buttons */
 
-.catalog-item .separate-button {
+.catalog-item .button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   border-radius: 2px;
 }
 
 .button-cart {
+  color: var(--white);
   background-color: var(--green);
 }
 
