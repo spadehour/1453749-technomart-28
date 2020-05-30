@@ -1,0 +1,570 @@
+ /* fonts */
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cuprum Regular"), local("Cuprum-Regular"),
+       url("../fonts/cuprum.woff2") format("woff2"),
+       url("../fonts/cuprum.woff") format("woff"),
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cuprum Bold"), local("Cuprum-Bold"),
+       url("../fonts/cuprumbold.woff2") format("woff2"),
+       url("../fonts/cuprumbold.woff") format("woff"),
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Cuprum Italic"), local("Cuprum-Italic"),
+       url("../fonts/cuprumitalic.woff2") format("woff2"),
+       url("../fonts/cuprumitalic.woff") format("woff"),
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff"),
+}
+
+/* variables */
+
+:root {
+  /*basic colors */
+  --red: #EE3643;
+  --green: #63A63E;
+  --darkgrey: #293449;
+  --grey: #32425C;
+  --lightgrey: #C5C5C5;
+  --white: #FFFFFF;
+  --darkwhite: #F1F5F7;
+  --black: #000000;
+  --beige: #FFD180;
+
+  /* color variants */
+  --red-darkened: #BA2732;
+  --green-lightened: #5FBB2D;
+  --green-darkened: #518534;
+  --darkgrey-darkened: #161D29;
+  --lightgrey-darkened: #A9A9A9;
+  --white-half-visible: rgba(255, 255, 255, 0.5);
+  --white-transparent: rgba(255, 255, 255, 0.3);
+  --lightgrey-transparent: rgba(197, 197, 197, 0.3);
+  --lightgrey-darkened-transparent: rgba(169, 169, 169, 0.3);
+
+  /* backgrounds */
+  --background-cold: #F1F5F7;
+  --background-warm: #F7F3EC;
+
+  /* departments blocks */
+  --yellow-special: #FFBF47;
+  --blue-special: #3BBCE3;
+  --lilac-special: #DC91D8;
+  --green-special: #8ED78F;
+  --yellow-alt-special: #FFC047;
+
+  /* borders */
+  --border-lightgrey: #E5E5E5;
+  --border-lightgrey-alt: #EAEAEA;
+}
+
+/* global */
+
+body {
+  min-width: 960px;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul.no-default-mark {
+  list-style: none;
+}
+
+/* buttons and lables */
+
+.button {
+  font:inherit;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
+.separate-button {
+  text-transform: uppercase;
+  line-height: 18px;
+  border: 1px solid var(--border-lightgrey);
+}
+
+.index .separate-button, .catalog-item .separate-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--red);
+  border: none;
+}
+
+.index .separate-button:active {
+  background-color: var(--red-darkened);
+}
+
+.labeled::before {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.labeled-new::before {
+  content: "new";
+}
+
+/* header */
+
+.main-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--grey);
+  background-color: var(--background-cold);
+}
+
+/* top-panel */
+
+.top-panel {
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--darkgrey);
+}
+
+.logo-background {
+  background-color: var(--red);
+}
+
+.logo-background:active {
+  background-color: var(--red-darkened);
+}
+
+.top-panel-item:not(.top-panel-search) {
+  text-align: center;
+}
+
+.top-panel-item:hover {
+  /* icon becomes fully visible */
+}
+
+.top-panel-item:active {
+  color: var(--white-half-visible);
+}
+
+.top-panel-item:not(.top-panel-search):not(.top-panel-order):active {
+  background-color: var(--darkgrey-darkened);
+}
+/* 'not-empty' selector may be added to cart or bookmarks when they are not empty */
+.top-panel-item.not-empty {
+  background-color: var(--red);
+}
+
+.top-panel-item.not-empty:active {
+  background-color: var(--red-darkened);
+}
+
+.top-panel-search:focus {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.top-panel-order {
+  background-color: var(--green);
+}
+
+.top-panel-order:hover{
+  background-color: var(--green-lightened);
+}
+
+/* header content */
+
+.header-description {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: var(--red);
+}
+
+/* header contacts */
+.header-contacts, .user {
+  text-align: center;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--red);
+  border: 3px solid var(--white);
+}
+
+.header-address {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+/* user section */
+
+.user-button {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--white);
+}
+
+.profile-button:hover {
+  /*icons bocome 'grey' */
+}
+
+.user-button:not(.profile-button):hover {
+  color: var(--red);
+}
+
+.user-nav a{
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--grey);
+}
+
+.user-nav a:hover {
+  color: var(--red);
+}
+
+.user-button:active, .user-nav a:active {
+  color: var(--lightgrey);
+}
+
+/* main navigation */
+
+.main-nav {
+  font-size: 18px;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--grey);
+}
+
+.main-nav a {
+  color: inherit;
+}
+
+.main-nav a:hover {
+  background-color: var(--darkgrey);
+}
+
+.main-nav a:active {
+  color: var(--white-half-visible);
+  background-color: var(--darkgrey-darkened);
+}
+
+/* departments block */
+
+.departments {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--white);
+}
+
+.departments-item-title {
+  font-weight: 700;
+}
+
+/* buttons in departments block */
+
+.departments-item .button {
+  background-color: var(--white-transparent);
+}
+
+.departments-item .button:hover {
+  background-color: var(--lightgrey-transparent);
+}
+
+.departments-item .button:active {
+  background-color: var(--lightgrey-darkened-transparent);
+}
+
+/* sections in departments block */
+
+.departments-item.supplies {
+  background-color: var(--yellow-special);
+}
+
+.departments-item.tools {
+  background-color: var(--blue-special);
+}
+
+.departments-item.equipment {
+  background-color: var(--lilac-special);
+}
+
+.departments-item.discount {
+  background-color: var(--green-special);
+}
+
+.departments-item.delivery {
+  background-color: var(--yellow-alt-special);
+}
+
+/* slider in departments block */
+
+.departments-slider-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.departments-slider-description {
+  font-size: 18px;
+}
+
+/* sections headlines */
+
+.section-headline {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--grey);
+  background-color: var(--background-warm);
+}
+
+.inner-page .section-headline-block {
+  background-color: var(--background-cold);
+}
+
+.catalog-panel {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--background-warm);
+}
+
+/* breadcrumps */
+
+.breadcrumps {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumps a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumps a:active {
+  opacity: 0.5;
+}
+
+.breadcrumps a.home:hover {
+  /* icon becomes 'grey' */
+}
+
+/* filter */
+
+.catalog-filter {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.catalog-filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.catalog-filter fieldset {
+  border: none;
+}
+
+.catalog-filter fieldset:not(:last-of-type) {
+  border-bottom: 1px solid var(--border-lightgrey);
+}
+
+.filter-price .widget {
+  background-color: var(--background-warm);
+  border-radius: 3px;
+}
+
+.filter-price .count {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* catalog items */
+
+.catalog-item {
+  text-align: center;
+  border: 1px solid var(--border-lightgrey-alt)
+}
+
+.catalog-item:hover {
+  /* outer shadow */
+}
+
+.catalog-item-description {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.catalog-item-former-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: var(--lightgrey-darkened);
+}
+
+.catalog-item-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--red);
+}
+
+/* catalog item buttons */
+
+.catalog-item .separate-button {
+  border-radius: 2px;
+}
+
+.button-cart {
+  background-color: var(--green);
+}
+
+.button-cart:hover {
+  background-color: var(--green-lightened);
+}
+
+.button-cart:active {
+  background-color: var(--green-darkened);
+}
+
+.button-bookmarks {
+  color: var(--grey);
+  background: var(--white);
+  border: 3px solid var(--green);
+}
+
+.button-bookmarks:hover, .button-bookmarks:active {
+  border-color: var(--grey);
+}
+
+.button-bookmarks:active {
+  opacity: 0.5;
+}
+
+/* manufacturers */
+
+.manufacturers-item:active {
+  opacity: 0.5;
+}
+
+/* service */
+
+.main-service {
+  background-color: var(--background-cold);
+}
+
+.service-slider-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--grey);
+}
+
+.service-slider-button:hover{
+  background-color: var(--darkgrey);
+}
+
+.service-slider-button:active {
+  color: var(--grey);
+  background-color: var(--white);
+}
+
+.service-section-title {
+  color: var(--grey);
+}
+
+/* text sections */
+
+.text-section ul {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* main footer */
+
+.main-footer {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  color: var(--darkwhite);
+  background-color: var(--grey);
+}
+
+.main-footer a {
+  color: inherit;
+}
+
+.main-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav a:active {
+  opacity: 0.5;
+}
+
+/* bottom panel */
+
+.bottom-panel {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--darkgrey);
+}
+
+.footer-departments, .bottom-panel a {
+  color: var(--beige);
+}
+
+.bottom-panel a:active {
+  color: var(--red);
+}
+
+.social-item {
+  background-color: var(--darkgrey-darkened);
+}
+
+.social-item:hover, .social-item:active {
+  background-color: var(--red);
+}
