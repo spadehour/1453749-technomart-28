@@ -188,33 +188,42 @@
 			</ul>
 		</section>
 
-		<section>
-			<h2>Сервисы</h2>
+		<section class="separated-section">
+			<h2 class="section-title">Сервисы</h2>
 			<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
 			Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <!-- Ниже должно быть организовано переключение между кнопками из списка, которым соответствуют свои артиклы -->
-			<ul>
-				<li>Доставка</li>
-				<li>Гарантия</li>
-				<li>Кредит</li>
+			<ul class="no-default-mark">
+				<li>
+          <input class="visually-hidden" type="radio" id="service-delivery" name="service-section" value="delivery">
+          <label class="service-radiobutton" for="service-delivery">Доставка</label>
+        </li>
+				<li>
+          <input class="visually-hidden" type="radio" id="service-warranty" name="service-section" value="warranty">
+          <label class="service-radiobutton" for="service-warranty">Гарантия</label>
+        </li>
+				<li>
+          <input class="visually-hidden" type="radio" id="service-credit" name="service-section" value="credit">
+          <label class="service-radiobutton" for="service-credit">Кредит</label>
+        </li>
 			</ul>
-			<article>
-				<h3>Доставка</h3>
+			<article class="service-section service-section-delivery">
+				<h3 class="section-title service-section-title">Доставка</h3>
 				<p>Мы с удовольствием доставим ваш товар прямо
 				к вашему подъезду совершенно бесплатно!
 				Ведь мы неплохо заработаем,
 				поднимая его на ваш этаж!</p>
 			</article>
-			<article>
-				<h3>Гарантия</h3>
+			<article class="service-section service-section-warranty">
+				<h3 class="section-title service-section-title">Гарантия</h3>
 				<p>Если купленный у нас товар поломается или заискрит,
 				а также в случае пожара, спровоцированного его возгоранием,
 				вы всегда можете быть уверены в нашей гарантии.
 				Мы обменяем сгоревший товар на новый.
 				Дом уж восстановите как-нибудь сами.</p>
 			</article>
-			<article>
-				<h3>Кредит</h3>
+			<article class="service-section service-section-delivery">
+				<h3 class="section-title service-section-title">Кредит</h3>
 				<p>Залезть в долговую яму стало проще!
 				Кредитные консультанты придут вам на помощь.</p>
 			</article>

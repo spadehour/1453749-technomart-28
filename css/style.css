@@ -96,7 +96,7 @@ img {
   height: auto;
 }
 
-ul.no-default-mark {
+.no-default-mark {
   list-style: none;
 }
 
@@ -531,11 +531,11 @@ ul.no-default-mark {
 
 /* service */
 
-.main-service {
+.separated-section {
   background-color: var(--background-cold);
 }
 
-.service-slider-button {
+.service-radiobutton {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
@@ -544,11 +544,11 @@ ul.no-default-mark {
   background-color: var(--grey);
 }
 
-.service-slider-button:hover{
+.service-radiobutton:hover{
   background-color: var(--darkgrey);
 }
 
-.service-slider-button:active {
+input:checked + .service-radiobutton {
   color: var(--grey);
   background-color: var(--white);
 }
