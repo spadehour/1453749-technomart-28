@@ -264,18 +264,18 @@ a[href] .logo-background:active {
 
 /* user section */
 
-.user-button {
+.user .button {
   font-size: 21px;
   line-height: 21px;
   background-color: var(--white);
 }
 
-.profile-button:hover {
-  /*icons bocome 'grey' */
+.user-auth .button:hover {
+  color: var(--red);
 }
 
-.user-button:not(.profile-button):hover {
-  color: var(--red);
+.user-profile .button:hover {
+  /*icons bocome 'grey' */
 }
 
 .user-nav a{
@@ -288,7 +288,7 @@ a[href] .logo-background:active {
   color: var(--red);
 }
 
-.user-button:active, .user-nav a:active {
+.user .button:active, .user-nav a:active {
   color: var(--lightgrey);
 }
 
