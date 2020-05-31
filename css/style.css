@@ -103,40 +103,34 @@ img {
 /* buttons and lables */
 
 .button {
-  font:inherit;
-  text-decoration: none;
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-}
-
-.separate-button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   color: var(--white);
   background-color: var(--red);
+  border: none;
+  border-radius: 0;
 }
 
-.separate-button:active {
+.button:active {
   background-color: var(--red-darkened);
 }
 
-.inner-page .separate-button {
+.inner-page .button {
   font: inherit;
   color: inherit;
   background-color: transparent;
   border: 1px solid var(--border-lightgrey);
 }
 
-.inner-page .separate-button:hover {
+.inner-page .button:hover {
   border-color: var(--lightgrey);
 }
 
-.inner-page .separate-button:active {
-  background-color: transparent;
+.inner-page .button:active {
   border-color: var(--red);
 }
 
@@ -267,7 +261,9 @@ a[href] .logo-background:active {
 .user .button {
   font-size: 21px;
   line-height: 21px;
+  color: inherit;
   background-color: var(--white);
+  border: none;
 }
 
 .user-auth .button:hover {
@@ -636,10 +632,10 @@ input:checked + .service-radiobutton {
   color: var(--red);
 }
 
-.social-item {
+.social a {
   background-color: var(--darkgrey-darkened);
 }
 
-.social-item:hover, .social-item:active {
+.social a:hover, .social a:active {
   background-color: var(--red);
 }
