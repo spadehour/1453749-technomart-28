@@ -100,6 +100,10 @@ img {
   list-style: none;
 }
 
+.modal {
+  display: none;
+}
+
 /* buttons */
 
 .button {
