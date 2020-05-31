@@ -100,7 +100,7 @@ img {
   list-style: none;
 }
 
-/* buttons and lables */
+/* buttons */
 
 .button {
   font-family: "Cuprum", Arial, sans-serif;
@@ -133,6 +133,8 @@ img {
 .inner-page .button:active {
   border-color: var(--red);
 }
+
+/* lables */
 
 .labeled::before {
   font-family: "Cuprum", Arial, sans-serif;
@@ -239,6 +241,7 @@ a[href] .logo-background:active {
 }
 
 /* header contacts */
+
 .header-contacts, .user {
   text-align: center;
 }
@@ -371,8 +374,13 @@ a[href] .logo-background:active {
   font-weight: 700;
 }
 
-.departments-slider-description {
+.departments-slider p {
   font-size: 18px;
+}
+
+.slider-button {
+  background-color: transparent;
+  border: none;
 }
 
 /* sections headlines */
@@ -509,7 +517,7 @@ a[href] .logo-background:active {
 
 /* catalog item buttons */
 
-.catalog-item .separate-button {
+.catalog-item .button {
   border-radius: 2px;
 }
 
@@ -589,7 +597,7 @@ input:checked + .service-radiobutton {
 
 /* text sections */
 
-.text-section ul {
+.company-list {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
 }
