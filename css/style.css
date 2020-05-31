@@ -178,7 +178,7 @@ img {
   background-color: var(--red);
 }
 
-.logo-background:active {
+a[href] .logo-background:active {
   background-color: var(--red-darkened);
 }
 
@@ -397,7 +397,7 @@ img {
   background-color: var(--background-cold);
 }
 
-.catalog-panel {
+.inner-panel {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -409,6 +409,10 @@ img {
 .breadcrumps {
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.breadcrumps a {
+  color: inherit;
 }
 
 .breadcrumps a:hover {
@@ -425,23 +429,23 @@ img {
 
 /* filter */
 
-.catalog-filter {
+.filter {
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
 }
 
-.catalog-filter legend {
+.filter legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
 }
 
-.catalog-filter fieldset {
+.filter fieldset {
   border: none;
 }
 
-.catalog-filter fieldset:not(:last-of-type) {
+.filter fieldset:not(:last-of-type) {
   border-bottom: 1px solid var(--border-lightgrey);
 }
 
@@ -450,10 +454,12 @@ img {
   border-radius: 3px;
 }
 
-.filter-price .count {
+.filter-price output {
   font-size: 17px;
   line-height: 18px;
   text-align: center;
+  background-color: var(--background-warm);
+  border-radius: 2px;
 }
 
 /* catalog items */
@@ -555,6 +561,18 @@ input:checked + .service-radiobutton {
 
 .service-section-title {
   color: var(--grey);
+}
+
+/* paging */
+
+.paging a {
+  border-radius: 2px;
+}
+
+.paging a:not([href]), .paging a:not([href]):hover, .paging a:not([href]):active {
+  color: var(--white);
+  background-color: var(--red);
+  border-color: var(--red);
 }
 
 /* text sections */
