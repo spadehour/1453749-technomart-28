@@ -501,30 +501,30 @@ a[href] .logo-background:active {
   border-radius: 2px;
 }
 
-.button-cart {
+.catalog-item .button-cart {
   color: var(--white);
   background-color: var(--green);
 }
 
-.button-cart:hover {
+.catalog-item .button-cart:hover {
   background-color: var(--green-lightened);
 }
 
-.button-cart:active {
+.catalog-item .button-cart:active {
   background-color: var(--green-darkened);
 }
 
-.button-bookmarks {
+.catalog-item .button-bookmarks {
   color: var(--grey);
   background: var(--white);
   border: 3px solid var(--green);
 }
 
-.button-bookmarks:hover, .button-bookmarks:active {
+.catalog-item .button-bookmarks:hover, .catalog-item .button-bookmarks:active {
   border-color: var(--grey);
 }
 
-.button-bookmarks:active {
+.catalog-item .button-bookmarks:active {
   background-color: transparent;
   opacity: 0.5;
 }
