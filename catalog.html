@@ -32,17 +32,18 @@
 			<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 		</section>
     <!-- Одна из следующих двух секций должна быть видима в зависимости от того, выполнен ли вход -->
-		<section class="user user-auth">
+    <section class="user user-auth">
       <h2 class="visually-hidden">Аутентификация</h2>
-			<a class="button user-button login-button" href="">Войти</a>
-			<a class="button user-button signup-button" href="">Регистрация</a>
+			<a class="button login-button" href="">Войти</a>
+			<a class="button signup-button" href="">Регистрация</a>
 		</section>
 		<section class="user user-profile">
       <h2 class="visually-hidden">Профиль</h2>
-			<a class="button user-button profile-button" href="">Равшан Джамшутович</a>
+			<a class="button profile-button" href="">Равшан Джамшутович</a>
+      <a class="button logout-button" href="">Выйти</a>
 			<ul class="user-nav no-default-mark">
-				<li><a class="button" href="">Мои заказы</a></li>
-				<li><a class="button" href="">Личный кабинет</a></li>
+				<li><a href="">Мои заказы</a></li>
+				<li><a href="">Личный кабинет</a></li>
 			</ul>
 		</section>
     <!-- Да, вот этих -->
@@ -131,34 +132,25 @@
 
   		<div class="inner-panel">
       	Сортировка:
-        <form action="https://echo.htmlacademy.ru" method="get">
-    			<ul class="no-default-mark">
-          <!-- Этот список должен быть реализован в виде радиокнопок -->
-    				<li>
-                <input type="radio" id="sort-by-price" name="sort-by" value="price">
-                <label for="sort-by-price">По цене:</label>
-            </li>
-    				<li>
-                <input type="radio" id="sort-by-type" name="sort-by" value="type">
-                <label for="sort-by-type">По типу:</label>
-            </li>
-    				<li>
-                <input type="radio" id="sort-by-function" name="sort-by" value="function">
-                <label for="sort-by-function">По фунцкионалу:</label>
-            </li>
-    			</ul>
-    			<ul class="no-default-mark">
-          <!-- Этот список должен быть реализован в виде радиокнопок -->
-    				<li>
-                <input type="radio" id="sort-in-ascending-order" name="sort-order" value="ascending">
-                <label for="sort-in-ascending-order">По возрастанию</label>
-            </li>
-    				<li>
-                <input type="radio" id="sort-in-descending-order" name="sort-order" value="descending">
-                <label for="sort-in-descending-order">По убыванию</label>
-            </li>
-    			</ul>
-        </form>
+  			<ul class="no-default-mark">
+  				<li>
+              <a href="">По цене:</a>
+          </li>
+  				<li>
+              <a href="">По типу:</a>
+          </li>
+  				<li>
+              <a href="">По фунцкионалу:</a>
+          </li>
+  			</ul>
+  			<ul class="no-default-mark">
+  				<li>
+              <a href="">По возрастанию</a>
+          </li>
+  				<li>
+              <a href="">По убыванию</a>
+          </li>
+  			</ul>
       </div>
 
 			<article class="catalog-item">

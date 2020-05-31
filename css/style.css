@@ -281,7 +281,7 @@ a[href] .logo-background:active {
 .user-nav a{
   font-size: 16px;
   line-height: 18px;
-  color: var(--grey);
+  color: inherit;
 }
 
 .user-nav a:hover {
@@ -402,6 +402,22 @@ a[href] .logo-background:active {
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--background-warm);
+}
+
+.inner-panel a {
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  color: inherit;
+  opacity: 0.3;
+}
+
+.inner-panel a:hover {
+  opacity: 1;
+}
+
+.inner-panel a:active {
+  color: var(--red);
+  text-decoration: none;
 }
 
 /* breadcrumps */
