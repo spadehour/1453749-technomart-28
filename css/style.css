@@ -142,18 +142,18 @@ overflow: hidden;
   background-color: var(--red-darkened);
 }
 
-.inner-page .button {
+.catalog-button {
   font: inherit;
   color: inherit;
   background-color: transparent;
   border: 1px solid var(--border-lightgrey);
 }
 
-.inner-page .button:hover {
+.catalog-button:hover {
   border-color: var(--lightgrey);
 }
 
-.inner-page .button:active {
+.catalog-button:active {
   border-color: var(--red);
 }
 
