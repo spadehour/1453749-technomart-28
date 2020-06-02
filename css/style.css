@@ -385,7 +385,7 @@ a[href].logo-background:active {
 
 /* slider in departments block */
 
-.departments-slider {
+.departments-slider article {
   background-color: var(--grey);
   /*background-image*/
   /*inner-shadow top*/
