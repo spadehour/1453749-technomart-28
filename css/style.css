@@ -225,19 +225,19 @@ a[href].logo-background:active {
   background-color: var(--red-darkened);
 }
 
-.top-panel-search {
+.top-panel-search button, .top-panel-search input {
   font: inherit;
   color: inherit;
   background-color: transparent;
   border: none;
 }
 
-.top-panel-search:focus {
+.top-panel-search input:focus, .top-panel-search input:focus + button {
   color: var(--black);
   background-color: var(--white);
 }
 
-.top-panel-search::placeholder {
+.top-panel-search input::placeholder {
   color: inherit;
   opacity: 1; /* for firefox */
 }
