@@ -565,20 +565,21 @@ a[href] .logo-background:active {
   background-color: var(--background-cold);
 }
 
-.service-radiobutton {
+.service-button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
   color: var(--white);
   background-color: var(--grey);
+  border: none;
 }
 
-.service-radiobutton:hover{
+.service-button:not(.current):hover {
   background-color: var(--darkgrey);
 }
 
-input:checked + .service-radiobutton {
+.service-button.current {
   color: var(--grey);
   background-color: var(--white);
 }
