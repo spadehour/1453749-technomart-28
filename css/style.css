@@ -424,6 +424,10 @@ a[href].logo-background:active {
   background-color: var(--background-cold);
 }
 
+.inner-panel, .inner-panel h3 {
+  font: inherit;
+}
+
 .inner-panel {
   font-size: 13px;
   line-height: 18px;
