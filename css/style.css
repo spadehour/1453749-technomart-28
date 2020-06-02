@@ -178,7 +178,7 @@ img {
   background-color: var(--red);
 }
 
-a[href] .logo-background:active {
+a[href].logo-background:active {
   background-color: var(--red-darkened);
 }
 
